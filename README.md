@@ -34,7 +34,7 @@ Gerber/*.ZIPで出力した基板を入手していることを前提として�
    ![下面](images/board07.jpg)
 4. PC-8001_SDに取り付ける場合はRaspberry　Pi Pico 2側のピンヘッダがICと干渉するので、短く切断します。
    ![下面](images/board08.jpg)
-5. Arduino IDE経由で、Arduinoのスケッチを書き込みます。
+5. Arduino IDE経由で、Arduinoのスケッチを書き込みます(IDEに[arduino-pico](https://github.com/earlephilhower/arduino-pico)、[SdFat](https://github.com/greiman/SdFat)(libraries/SdFat/src/SdFatConfig.hのUSE_UTF8_LONG_NAMESを有効にする必要あり)のインストールが必要)。
    * MZ80K_SD用: Arduino/MZ-80K_SD_Pico2
    * PC-8001_SD用: Arduino/PC-8001_SD_Pico2
 6. 組み立てたものを、Arduino Pro Miniと入れ替えます。
