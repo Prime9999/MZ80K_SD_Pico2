@@ -17,7 +17,7 @@
 
 ここで公開しているファームウェアは、オリジナルに対して次の機能を追加しています:
 * SD側のファイル名をUTF-8で処理可能とする(つまり、半角英数字以外も取り扱い可能にする)
-* UTF-8対応による、PCとSD間の相互変換可能文字が増加(半角カナおよび一部の記号と漢字)
+* UTF-8対応により、PCとSD間の相互変換可能文字が増加(半角カナおよび一部の記号と漢字)
 
 ## 組み立て
 Gerber/*.ZIPで出力した基板を入手していることを前提として解説します。
@@ -28,11 +28,11 @@ Gerber/*.ZIPで出力した基板を入手していることを前提として�
    * ピンヘッダ(20ピン×2、12ピン×2、2ピン)
 1. Arduino側のピンヘッダ(9ピン×2と2ピン)をはんだ付けします。
    ![上面](images/board02.jpg)![下面](images/board03.jpg)
-2. Raspberry　Pi Pico 2側に、ピンヘッダ(20ピン×2)はんだ付け済みのRaspberry　Pi Pico 2を取り付けます。
+2. Raspberry Pi Pico 2側に、ピンヘッダ(20ピン×2)はんだ付け済みのRaspberry Pi Pico 2を取り付けます。
    ![上面](images/board04.jpg)![下面](images/board05.jpg)
-3. Raspberry　Pi Pico 2側のピンヘッダ(20ピン×2)をはんだ付けします。
+3. Raspberry Pi Pico 2側のピンヘッダ(20ピン×2)をはんだ付けします。
    ![下面](images/board07.jpg)
-4. PC-8001_SDに取り付ける場合はRaspberry　Pi Pico 2側のピンヘッダがICと干渉するので、短く切断します。
+4. PC-8001_SDに取り付ける場合はRaspberry Pi Pico 2側のピンヘッダがICと干渉するので、短く切断します。
    ![下面](images/board08.jpg)
 5. Arduino IDE経由で、Arduinoのスケッチを書き込みます(IDEに[arduino-pico](https://github.com/earlephilhower/arduino-pico)、[SdFat](https://github.com/greiman/SdFat)(libraries/SdFat/src/SdFatConfig.hのUSE_UTF8_LONG_NAMESを有効にする必要あり)のインストールが必要)。
    * MZ80K_SD用: Arduino/MZ-80K_SD_Pico2
